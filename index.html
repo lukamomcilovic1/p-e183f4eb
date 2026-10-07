@@ -55,7 +55,7 @@ document.querySelectorAll('input[name=sport]').forEach(c=>c.addEventListener('ch
  gl.innerHTML=s.length?s.map(x=>`<option>${x}</option>`).join(''):'<option value="">Prvo izaberi sportove</option>';
 }));
 document.getElementById('f').addEventListener('submit',async e=>{
- e.preventDefault();if(e.target.dataset.s)return;const fd=new FormData(e.target);
+ e.preventDefault();if(e.target.dataset.s)return;const fd=new FormData(e.target);{const k=(fd.get('kontakt')||'').trim();if(/^[+0-9][0-9 \/-]*$/.test(k))fd.set('kontakt',"'"+k)}
  if(!fd.getAll('sport').length){alert('Izaberi bar jedan sport');return}
  e.target.dataset.s=1;const b=e.target.querySelector('[type=submit],button:not([type=button])');if(b){b.disabled=true;b.textContent='Šaljem…'}
  if(ENDPOINT){await fetch(ENDPOINT,{method:'POST',body:new URLSearchParams(fd),mode:'no-cors'})}
