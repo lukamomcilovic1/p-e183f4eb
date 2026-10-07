@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sr"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nađi partnera za igru u Beogradu</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc}
+.wrap{max-width:520px;margin:auto;padding:28px 18px}h1{font-size:28px;margin:0 0 8px}p.sub{color:#94a3b8;margin:0 0 24px}
+.card{background:#1e293b;border-radius:16px;padding:20px}label{display:block;font-weight:600;margin:16px 0 8px}
+input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#f8fafc;font-size:16px}
+.sports{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sport{position:relative}
+.sport input{position:absolute;opacity:0}.sport span{display:block;text-align:center;padding:14px;border-radius:12px;border:2px solid #334155;cursor:pointer;font-size:16px}
+.sport input:checked+span{border-color:#22c55e;background:#14532d}
+.lvl{display:none;margin-top:8px}.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;color:#cbd5e1}
+.chk input{width:auto;margin-top:3px}button{width:100%;margin-top:22px;padding:16px;border:0;border-radius:12px;background:#22c55e;color:#052e16;font-size:18px;font-weight:700;cursor:pointer}
+#ok{display:none;text-align:center;padding:30px 10px}small{color:#64748b}
+</style></head><body><div class="wrap">
+<h1>Nemaš s kim da igraš? 🎾🏀⚽</h1>
+<p class="sub">Prijavi se i nađi partnera na svom nivou u Beogradu. Prijave su otvorene.</p>
+<form id="f" class="card">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>Ime</label><input name="ime" required></div><div><label>Prezime</label><input name="prezime" required></div></div><label>Nadimak <span style="font-weight:400;font-size:13px;color:#94a3b8">(nije obavezno)</span></label><input name="nadimak" placeholder="Kako da te zovu u igri">
+<label>Šta igraš? (može više)</label>
+<div class="sports">
+<label class="sport"><input type="checkbox" name="sport" value="Tenis"><span><svg width="26" height="26" style="vertical-align:-7px" aria-hidden="true" viewBox="0 0 64 64"><defs><linearGradient id="gt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs><g transform="rotate(-35 32 32)"><rect x="29" y="40" width="6" height="20" rx="3" fill="#e2e8f0"/><rect x="29" y="47" width="6" height="2" fill="#94a3b8"/><rect x="29" y="52" width="6" height="2" fill="#94a3b8"/><rect x="29" y="57" width="6" height="2" fill="#94a3b8"/><path d="M27 36 L32 42 L37 36" fill="none" stroke="#e2e8f0" stroke-width="2.5"/><ellipse cx="32" cy="20" rx="15" ry="18" fill="url(#gt)" fill-opacity=".35" stroke="#f8fafc" stroke-width="2.5"/><g stroke="#4ade80" stroke-width="1.2"><line x1="22" y1="6" x2="22" y2="34"/><line x1="27" y1="3" x2="27" y2="37"/><line x1="32" y1="2" x2="32" y2="38"/><line x1="37" y1="3" x2="37" y2="37"/><line x1="42" y1="6" x2="42" y2="34"/><line x1="18" y1="10" x2="46" y2="10"/><line x1="17" y1="15" x2="47" y2="15"/><line x1="17" y1="20" x2="47" y2="20"/><line x1="17" y1="25" x2="47" y2="25"/><line x1="18" y1="30" x2="46" y2="30"/></g></g><circle cx="53" cy="11" r="6.5" fill="#facc15" stroke="#ca8a04" stroke-width="1.2"/><path d="M47.5 8.5 Q53 12.5 58.5 8.5" stroke="#fff" stroke-width="1.3" fill="none"/></svg> Tenis</span></label>
+<label class="sport"><input type="checkbox" name="sport" value="Košarka"><span><svg width="26" height="26" style="vertical-align:-7px" aria-hidden="true" viewBox="0 0 64 64"><defs><linearGradient id="gk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs><circle cx="32" cy="32" r="24" fill="url(#gk)" stroke="#f8fafc" stroke-width="2.5"/><g fill="none" stroke="#0f172a" stroke-width="2.2" opacity=".85"><line x1="8" y1="32" x2="56" y2="32"/><line x1="32" y1="8" x2="32" y2="56"/><path d="M15 15 Q25 32 15 49"/><path d="M49 15 Q39 32 49 49"/></g></svg> Košarka</span></label>
+<label class="sport"><input type="checkbox" name="sport" value="Padel"><span><svg width="26" height="26" style="vertical-align:-7px" aria-hidden="true" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs><g transform="rotate(-35 32 32)"><rect x="28.5" y="42" width="7" height="18" rx="3" fill="#e2e8f0"/><rect x="28.5" y="46" width="7" height="2" fill="#94a3b8"/><rect x="28.5" y="51" width="7" height="2" fill="#94a3b8"/><rect x="28.5" y="56" width="7" height="2" fill="#94a3b8"/><path d="M26 38 L32 45 L38 38 Z" fill="#e2e8f0"/><path d="M32 4 C46 4 52 14 52 23 C52 33 44 40 32 40 C20 40 12 33 12 23 C12 14 18 4 32 4 Z" fill="url(#g)" stroke="#f8fafc" stroke-width="2.5"/><g fill="#0f172a" opacity=".85"><circle cx="25" cy="13" r="1.8"/><circle cx="32" cy="12" r="1.8"/><circle cx="39" cy="13" r="1.8"/><circle cx="21" cy="20" r="1.8"/><circle cx="28" cy="19.5" r="1.8"/><circle cx="36" cy="19.5" r="1.8"/><circle cx="43" cy="20" r="1.8"/><circle cx="21" cy="27" r="1.8"/><circle cx="28" cy="26.5" r="1.8"/><circle cx="36" cy="26.5" r="1.8"/><circle cx="43" cy="27" r="1.8"/><circle cx="26" cy="33" r="1.8"/><circle cx="32" cy="33.5" r="1.8"/><circle cx="38" cy="33" r="1.8"/></g></g><circle cx="53" cy="11" r="6.5" fill="#facc15" stroke="#ca8a04" stroke-width="1.2"/><path d="M47.5 8.5 Q53 12.5 58.5 8.5" stroke="#fff" stroke-width="1.3" fill="none"/></svg> Padel</span></label>
+<label class="sport"><input type="checkbox" name="sport" value="Fudbal"><span><svg width="26" height="26" style="vertical-align:-7px" aria-hidden="true" viewBox="0 0 64 64"><defs><linearGradient id="gf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs><circle cx="32" cy="32" r="24" fill="url(#gf)" stroke="#f8fafc" stroke-width="2.5"/><polygon points="32,22 41.5,29 38,40 26,40 22.5,29" fill="#0f172a" opacity=".85"/><g stroke="#0f172a" stroke-width="2.2" opacity=".85"><line x1="32" y1="22" x2="32" y2="9"/><line x1="41.5" y1="29" x2="54" y2="25"/><line x1="38" y1="40" x2="46" y2="51"/><line x1="26" y1="40" x2="18" y2="51"/><line x1="22.5" y1="29" x2="10" y2="25"/></g></svg> Fudbal</span></label>
+</div>
+<div id="levels"></div>
+<label>Koji sport ti je glavni?</label><select name="glavni" id="glavni" required><option value="">Prvo izaberi sportove</option></select>
+<label>Deo Beograda</label><select name="deo" required><option value="">Izaberi</option>
+<option>Novi Beograd</option><option>Zemun</option><option>Vračar</option><option>Stari grad</option><option>Zvezdara</option><option>Voždovac</option><option>Čukarica</option><option>Palilula</option><option>Savski venac</option><option>Rakovica</option><option>Drugo</option></select>
+<label>Kad možeš da igraš? (može više)</label>
+<div class="sports">
+<label class="sport"><input type="checkbox" name="vreme" value="Radnim danima pre 17h"><span>Radni dan pre 17h</span></label>
+<label class="sport"><input type="checkbox" name="vreme" value="Radnim danima posle 17h"><span>Radni dan posle 17h</span></label>
+<label class="sport"><input type="checkbox" name="vreme" value="Vikend ujutru"><span>Vikend ujutru</span></label>
+<label class="sport"><input type="checkbox" name="vreme" value="Vikend popodne"><span>Vikend popodne</span></label>
+</div>
+<label>Mejl ili telefon</label><input name="kontakt" required>
+<label class="chk"><input type="checkbox" required> Slažem se da se moji podaci čuvaju radi spajanja sa partnerima i da me kontaktirate kad aplikacija krene. Podatke ne delimo sa trećim licima i možeš tražiti brisanje u bilo kom trenutku.</label>
+<input type="hidden" name="izvor" id="izvor"><button>Prijavi se</button>
+</form>
+<div id="ok" class="card"><h2>Prijavljen si! 🎉</h2><p>Javićemo ti se čim krenemo.</p><button type="button" onclick="share()">Pošalji drugaru</button></div>
+<p><small>Zaštita podataka u skladu sa Zakonom o zaštiti podataka o ličnosti.</small></p>
+</div>
+<script>
+// Ovde nalepi adresu gde stižu prijave (npr. Formspree ili Google Apps Script). Dok je prazno, prijave se samo prikažu.
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbygrW4IC9zCGl3vArXAel0lVX5vRX8Ot-eimkfJjPhks8SJYoSOqaeiwlCdbroHn8RG/exec';
+document.getElementById('izvor').value=new URLSearchParams(location.search).get('izvor')||'direktno';
+const lv=document.getElementById('levels'),gl=document.getElementById('glavni');
+document.querySelectorAll('input[name=sport]').forEach(c=>c.addEventListener('change',()=>{
+ const s=[...document.querySelectorAll('input[name=sport]:checked')].map(x=>x.value);
+ const prev={};lv.querySelectorAll('select').forEach(x=>prev[x.name]=x.value);
+ lv.innerHTML=s.map(x=>`<label>Nivo: ${x}</label><select name="nivo_${x}" required><option value="">Izaberi</option><option>Početnik</option><option>Rekreativac</option><option>Srednji</option><option>Napredni</option></select>`).join('');
+ lv.querySelectorAll('select').forEach(x=>{if(prev[x.name])x.value=prev[x.name]});
+ gl.innerHTML=s.length?s.map(x=>`<option>${x}</option>`).join(''):'<option value="">Prvo izaberi sportove</option>';
+}));
+document.getElementById('f').addEventListener('submit',async e=>{
+ e.preventDefault();const fd=new FormData(e.target);
+ if(!fd.getAll('sport').length){alert('Izaberi bar jedan sport');return}
+ if(ENDPOINT){await fetch(ENDPOINT,{method:'POST',body:new URLSearchParams(fd),mode:'no-cors'})}
+ e.target.style.display='none';document.getElementById('ok').style.display='block';
+});
+function share(){const t='Prijavi se, nalazimo partnere za tenis, basket, padel i fudbal u Beogradu: '+location.href;
+if(navigator.share)navigator.share({text:t});else location.href='https://wa.me/?text='+encodeURIComponent(t)}
+</script></body></html>
