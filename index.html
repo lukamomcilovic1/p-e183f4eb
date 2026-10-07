@@ -35,7 +35,7 @@ input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #334155
 <label class="sport"><input type="checkbox" name="vreme" value="Vikend ujutru"><span>Vikend ujutru</span></label>
 <label class="sport"><input type="checkbox" name="vreme" value="Vikend popodne"><span>Vikend popodne</span></label>
 </div>
-<label>Mejl ili telefon</label><input name="kontakt" required>
+<label>Mejl</label><input name="mejl" type="email" required placeholder="ime@gmail.com"><label>Telefon (nije obavezno)</label><input name="tel" type="tel" inputmode="tel" placeholder="06x xxx xxxx">
 <label class="chk"><input type="checkbox" required> Slažem se da se moji podaci čuvaju radi spajanja sa partnerima i da me kontaktirate kad aplikacija krene. Podatke ne delimo sa trećim licima i možeš tražiti brisanje u bilo kom trenutku.</label>
 <input type="hidden" name="izvor" id="izvor"><button>Prijavi se</button>
 </form>
@@ -55,7 +55,7 @@ document.querySelectorAll('input[name=sport]').forEach(c=>c.addEventListener('ch
  gl.innerHTML=s.length?s.map(x=>`<option>${x}</option>`).join(''):'<option value="">Prvo izaberi sportove</option>';
 }));
 document.getElementById('f').addEventListener('submit',async e=>{
- e.preventDefault();if(e.target.dataset.s)return;const fd=new FormData(e.target);{const k=(fd.get('kontakt')||'').trim();if(/^[+0-9][0-9 \/-]*$/.test(k))fd.set('kontakt',"'"+k)}
+ e.preventDefault();if(e.target.dataset.s)return;const fd=new FormData(e.target);{const m=(fd.get('mejl')||'').trim(),t=(fd.get('tel')||'').trim();fd.set('kontakt',t?m+', '+t:m);fd.delete('mejl');fd.delete('tel')}
  if(!fd.getAll('sport').length){alert('Izaberi bar jedan sport');return}
  e.target.dataset.s=1;const b=e.target.querySelector('[type=submit],button:not([type=button])');if(b){b.disabled=true;b.textContent='Šaljem…'}
  if(ENDPOINT){await fetch(ENDPOINT,{method:'POST',body:new URLSearchParams(fd),mode:'no-cors'})}
